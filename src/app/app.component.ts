@@ -39,6 +39,7 @@ export class AppComponent {
     placeholder: "Type the content here!"
 
   };
+  
   customAdapterPlugin(editor: { plugins: { get: (arg0: string) => { (): any; new(): any; createUploadAdapter: (loader: any) => any; }; }; config: any; }) {
     editor.plugins.get('FileRepository').createUploadAdapter = (loader) => {
       return new Adapter(loader, editor.config);
