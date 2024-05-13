@@ -83,9 +83,8 @@ config = {
 
     //},
 
-    language: 'en'
+    language: 'en',
+    allowedContent: true,
   };
 
 }
-
-  class CkEditor extends ClassicEditor {}
